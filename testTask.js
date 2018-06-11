@@ -41,6 +41,7 @@ test ('Failure scenario', async t =>{
         .typeText(page.searchFormInput, 'what is the ultimate question of life the universe and everything')
         .click(page.searchFormButton)
         .resizeWindow(1400, 900)
+        .takeScreenshot('UltimateQuestionResults.png')
         .expect(page.searchResultBody.filter(b=>b.textContent.indexOf('42')<0).textContent).ok()
         .expect(page.searchResultBody.filter(b=>b.textContent.indexOf('a')<0).textContent).ok();
 });

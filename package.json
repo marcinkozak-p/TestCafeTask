@@ -1,0 +1,25 @@
+{
+  "name": "testtask",
+  "version": "1.0.0",
+  "description": "Simple testcafe tests against DuckDuckGo website",
+  "main": "testTask.js",
+  "scripts": {
+    "chrome": "testcafe chrome testTask.js -s .",
+    "firefox": "testcafe  firefox testTask.js -s .",
+    "chromeH": "testcafe chrome:headless testTask.js -s .",
+    "firefoxH": "testcafe firefox:headless testTask.js -s ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcinkozak-p/TestCafeTask.git"
+  },
+  "author": "Marcin Kozak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcinkozak-p/TestCafeTask/issues"
+  },
+  "homepage": "https://github.com/marcinkozak-p/TestCafeTask#readme",
+  "dependencies": {
+    "testcafe": "^0.20.3"
+  }
+}

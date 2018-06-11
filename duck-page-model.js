@@ -12,9 +12,3 @@ export default class BangsPage {
         this.bangsOption = Selector(".showcase__heading").withText("Start Using Bangs");
     }
 }
-
-/** Lessons learned:
- * 1. W nowej świeżej instancji strona odpala prompt z dodaniem wtyczki jakby użytkownik odpalił stronę pierwszy raz.
- * Trzeba było go zamknąć bo dopiero pod nim był privacy
- * 2. W chromie w konsoli spacja to tak naprawdę kropka (było: "ddgsi badge-link__close js-badge-link-dismiss")
- * 3. Prompt pokazuje się dopiero przy szerokości 1080 */
